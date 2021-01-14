@@ -5,13 +5,13 @@
 
 2. `make`
 
-3. 
+3. Run it
 ```shell
 LD_PRELOAD=\`pwd\`/libhook.so HOOK_LOG=/dev/stderr openssl enc -in /proc/cpuinfo -out test.bin -e -aes-256-cbc -pass pass:123123 -p -v`
 This will encrypt `/proc/cpuinfo` and output to `test.bin`, You can see some log from log.
 ```
 
-> Default log file is `hooklog.log`
+> Default log file is `hooklog.log`, use `HOOK_LOG` env to overwrite
 
 ## Example
 
