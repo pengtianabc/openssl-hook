@@ -1,5 +1,7 @@
 # OpenSSL Hook
 
+A hook for almost `openssl` `EVP_*` functions
+
 ## Build and Example
 1. `yum install openssl-devel` for `centos/rhel/fedora` or `apt install libssl-dev` for `debian/ubuntu/kali`
 
